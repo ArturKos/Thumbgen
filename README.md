@@ -1,2 +1,2 @@
 # Thumbgen
-Generator miniator obrazów napisacy w C++ Builder 6.0
+Generator miniatur obrazów napisacy w C++ Builder 6.0
