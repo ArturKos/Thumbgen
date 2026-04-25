@@ -1,0 +1,15 @@
+# CMake / build outputs
+build/
+out/
+
+# Doxygen output
+docs/build/
+
+# Borland C++ Builder 6 artifacts
+*.obj
+*.tds
+*.il?
+*.csm
+*.#??
+*.~*
+Thumbgen.exe
