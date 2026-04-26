@@ -4,12 +4,12 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="Thumbgen.exe"/>
-    <OBJFILES value="Thumbgen.obj main.obj"/>
+    <OBJFILES value="Thumbgen.obj src\main.obj src\image_filter.obj src\thumbnail_path.obj src\thumbnail_engine.obj"/>
     <RESFILES value="Thumbgen.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
-    <RESDEPEN value="$(RESFILES) main.dfm"/>
+    <RESDEPEN value="$(RESFILES) form\main.dfm"/>
     <LIBFILES value="gdiplus.lib"/>
     <LIBRARIES value="vclx.lib bcbsmp.lib rtl.lib vcl.lib"/>
     <SPARELIBS value="vcl.lib rtl.lib bcbsmp.lib vclx.lib"/>
@@ -20,9 +20,9 @@
       inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
       bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
       indy.bpi bcb2kaxserver.bpi"/>
-    <PATHCPP value=".;"/>
+    <PATHCPP value=".;src;"/>
     <PATHPAS value=".;"/>
-    <PATHRC value=".;"/>
+    <PATHRC value=".;form;"/>
     <PATHASM value=".;"/>
     <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
     <RELEASELIBPATH value="$(BCB)\lib\release"/>
@@ -30,7 +30,7 @@
     <USERDEFINES value="_DEBUG"/>
     <SYSDEFINES value="NO_STRICT"/>
     <MAINSOURCE value="Thumbgen.cpp"/>
-    <INCLUDEPATH value="&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;D:\Thumbgen;$(BCB)\include;$(BCB)\include\vcl"/>
+    <INCLUDEPATH value="include;form;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;D:\Thumbgen;$(BCB)\include;$(BCB)\include\vcl"/>
     <LIBPATH value="&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;D:\Thumbgen;$(BCB)\lib\obj;$(BCB)\lib"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
@@ -55,7 +55,10 @@
   <FILELIST>
       <FILE FILENAME="Thumbgen.res" FORMNAME="" UNITNAME="Thumbgen.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Thumbgen.cpp" FORMNAME="" UNITNAME="Thumbgen" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="main.cpp" FORMNAME="Form1" UNITNAME="main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="src\main.cpp" FORMNAME="Form1" UNITNAME="main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="src\image_filter.cpp" FORMNAME="" UNITNAME="image_filter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="src\thumbnail_path.cpp" FORMNAME="" UNITNAME="thumbnail_path" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="src\thumbnail_engine.cpp" FORMNAME="" UNITNAME="thumbnail_engine" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="gdiplus.lib" FORMNAME="" UNITNAME="gdiplus.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>

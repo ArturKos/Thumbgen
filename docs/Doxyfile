@@ -1,0 +1,21 @@
+# Minimal Doxygen configuration for Thumbgen.
+# Generate HTML docs with:  doxygen docs/Doxyfile
+
+PROJECT_NAME           = "Thumbgen"
+PROJECT_BRIEF          = "Batch JPEG thumbnail generator"
+OUTPUT_DIRECTORY       = docs/build
+INPUT                  = include
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = NO
+JAVADOC_AUTOBRIEF      = YES
+QUIET                  = YES
+WARN_AS_ERROR          = NO
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+HTML_OUTPUT            = html
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
